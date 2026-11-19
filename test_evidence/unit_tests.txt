@@ -1,0 +1,37 @@
+test_add_and_remove (tests.test_reservation.CapacityViewTests.test_add_and_remove) ... ok
+test_change (tests.test_reservation.CapacityViewTests.test_change) ... ok
+test_duplicate_and_unknown (tests.test_reservation.CapacityViewTests.test_duplicate_and_unknown) ... ok
+test_refuses_oversubscription (tests.test_reservation.CapacityViewTests.test_refuses_oversubscription) ... ok
+test_summary (tests.test_reservation.CapacityViewTests.test_summary) ... ok
+test_accept_installs_policy (tests.test_reservation.ManagerTests.test_accept_installs_policy) ... ok
+test_bad_requests (tests.test_reservation.ManagerTests.test_bad_requests) ... ok
+test_concurrent_requests_never_oversubscribe (tests.test_reservation.ManagerTests.test_concurrent_requests_never_oversubscribe) ... ok
+test_conflict_same_flow (tests.test_reservation.ManagerTests.test_conflict_same_flow) ... ok
+test_controller_failure_rolls_back (tests.test_reservation.ManagerTests.test_controller_failure_rolls_back) ... ok
+test_expiry_cleans_up (tests.test_reservation.ManagerTests.test_expiry_cleans_up) ... ok
+test_failed_removal_keeps_capacity_then_retries (tests.test_reservation.ManagerTests.test_failed_removal_keeps_capacity_then_retries) ... ok
+test_modify (tests.test_reservation.ManagerTests.test_modify) ... ok
+test_opposite_directions_independent (tests.test_reservation.ManagerTests.test_opposite_directions_independent) ... ok
+test_oversized_rejected_nothing_installed (tests.test_reservation.ManagerTests.test_oversized_rejected_nothing_installed) ... ok
+test_oversubscription_across_requests (tests.test_reservation.ManagerTests.test_oversubscription_across_requests) ... ok
+test_policy_gets_the_path_links (tests.test_reservation.ManagerTests.test_policy_gets_the_path_links) ... ok
+test_release_frees_capacity_and_removes_policy (tests.test_reservation.ManagerTests.test_release_frees_capacity_and_removes_policy) ... ok
+test_utilisation_sampled (tests.test_reservation.ManagerTests.test_utilisation_sampled) ... ok
+test_utilisation_view_text (tests.test_reservation.ManagerTests.test_utilisation_view_text) ... ok
+test_clear_leftovers_calls_controller (tests.test_reservation.StartupAndShutdownTests.test_clear_leftovers_calls_controller) ... ok
+test_clear_leftovers_survives_controller_failure (tests.test_reservation.StartupAndShutdownTests.test_clear_leftovers_survives_controller_failure) ... ok
+test_http_controller_clear_sends_delete (tests.test_reservation.StartupAndShutdownTests.test_http_controller_clear_sends_delete) ... ok
+test_sigterm_shuts_down_cleanly (tests.test_reservation.StartupAndShutdownTests.test_sigterm_shuts_down_cleanly) ... ok
+test_dropped_client_reservation_expires_by_itself (tests.test_reservation.TcpTests.test_dropped_client_reservation_expires_by_itself) ... ok
+test_full_flow (tests.test_reservation.TcpTests.test_full_flow) ... ok
+test_garbage_does_not_kill_connection (tests.test_reservation.TcpTests.test_garbage_does_not_kill_connection) ... ok
+test_line_longer_than_limit_is_rejected (tests.test_reservation.TcpTests.test_line_longer_than_limit_is_rejected) ... ok
+test_many_clients_compete (tests.test_reservation.TcpTests.test_many_clients_compete) ... ok
+test_request_split_across_packets_is_reassembled (tests.test_reservation.TcpTests.test_request_split_across_packets_is_reassembled)
+TCP is a byte stream: half a request must wait for the rest. ... ok
+test_two_requests_in_one_packet_get_two_replies (tests.test_reservation.TcpTests.test_two_requests_in_one_packet_get_two_replies) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 8.356s
+
+OK

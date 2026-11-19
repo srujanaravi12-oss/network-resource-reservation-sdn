@@ -1,0 +1,28 @@
+{
+  "topology": {
+    "access_mbps": 100.0,
+    "trunk_mbps": 10.0,
+    "switches": {"s1": 1, "s2": 2},
+    "trunk": ["s1", "s2"],
+    "hosts": {
+      "h1": {"ip": "10.0.0.1", "switch": "s1"},
+      "h2": {"ip": "10.0.0.2", "switch": "s1"},
+      "h3": {"ip": "10.0.0.3", "switch": "s1"},
+      "h4": {"ip": "10.0.0.4", "switch": "s1"},
+      "h5": {"ip": "10.0.0.5", "switch": "s2"},
+      "h6": {"ip": "10.0.0.6", "switch": "s2"},
+      "h7": {"ip": "10.0.0.7", "switch": "s2"},
+      "h8": {"ip": "10.0.0.8", "switch": "s2"}
+    }
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 9000,
+    "idle_timeout_s": 60,
+    "max_line_bytes": 4096
+  },
+  "controller": {
+    "rest_url": "http://127.0.0.1:8080",
+    "openflow_port": 6653
+  }
+}

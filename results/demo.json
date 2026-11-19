@@ -1,0 +1,29 @@
+{
+  "baseline_single": [
+    9.58
+  ],
+  "baseline_two_flows": [
+    9.22,
+    0.4
+  ],
+  "reserved_4mbps": [
+    3.98
+  ],
+  "checks": {
+    "oversized request rejected": true,
+    "rule removed after RELEASE": true,
+    "rule removed after expiry": true,
+    "accepted bandwidth never exceeds trunk capacity": true,
+    "one policy rule on s1 per accepted reservation": true,
+    "all rules removed automatically after expiry": true,
+    "server table is empty again": true,
+    "reservation still present right after the client died": true,
+    "rule removed automatically after the lease ended": true,
+    "capacity freed in the server table": true
+  },
+  "modified_7mbps": [
+    6.93
+  ],
+  "hard_accepted": 5,
+  "hard_rejected": 7
+}

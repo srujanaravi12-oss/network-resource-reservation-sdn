@@ -1,0 +1,23 @@
+# What a passing run looks like
+
+## python3 -m unittest -v   (from the project root)
+Ran 31 tests in about 10s
+
+OK
+
+## sudo python3 -m tests.demo_mininet   (Ryu running; ends with 10 CHECK ... PASS lines)
+CHECK accepted bandwidth never exceeds trunk capacity: PASS
+CHECK one policy rule on s1 per accepted reservation: PASS
+CHECK all rules removed automatically after expiry: PASS
+CHECK server table is empty again: PASS
+CHECK reservation still present right after the client died: PASS
+CHECK rule removed automatically after the lease ended: PASS
+CHECK capacity freed in the server table: PASS
+CHECK oversized request rejected: PASS
+CHECK rule removed after RELEASE: PASS
+CHECK rule removed after expiry: PASS
+
+## sudo python3 -m tests.evaluate
+Writes results/evaluation.csv and results/evaluation.png (low / medium / high rows).
+Reserved flows should achieve about 100% of their reserved rate at every load.
+(Exact figures vary run to run; see the table in README.md.)
